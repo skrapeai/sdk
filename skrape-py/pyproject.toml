@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "skrape-py"
+version = "1.0.3"
+description = "A Python library for easily interacting with Skrape.ai API with type-safe schemas using Pydantic"
+authors = ["jenslys"]
+readme = "README.md"
+packages = [{ include = "skrape" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pydantic = "^2.5.2"
+httpx = "^0.25.2"
+python-dotenv = "^1.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+pytest-asyncio = "^0.23.2"
+black = "^24.3.0"
+mypy = "^1.7.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
